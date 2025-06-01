@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Login Window</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+        .login-container {
+            background: rgba(55, 0, 166, 0.779);
+            border-radius: 15px;
+            padding: 40px;
+            width: 380px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+       
+
+        .login-title {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-input:focus {
+            border-bottom-color: #e74c3c;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
+        }
+
+        .checkbox {
+            margin-right: 8px;
+        }
+
+        .terms-link {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background: #ffffff;
+            border: none;
+            border-radius: 5px;
+            color: rgb(24, 3, 35);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background: #00c552;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+      
+        
+        <h2 class="login-title">LOGIN WINDOW</h2>
+        
+        <form onsubmit="alert('Login submitted!'); return false;">
+            <div class="form-group">
+                <input type="email" class="form-input" placeholder="Your Email Address" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" class="form-input" placeholder="Your Password" required>
+            </div>
+            
+            <div class="checkbox-container">
+                <input type="checkbox" class="checkbox" id="terms" required>
+                <label for="terms">I Agree With <a href="#" class="terms-link">Terms & Condition</a></label>
+            </div>
+            
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+</body>
+</html>
